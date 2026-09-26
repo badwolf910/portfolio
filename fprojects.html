@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-    h2 {
-      color: rgb(63, 27, 63) !important;
-      font-size: 36px !important;
-      font-family: 'Poppins', sans-serif !important; 
-    }
-    p {
-      color: rgb(63, 27, 63) !important;
-      font-size: 18px !important;
-      font-family: 'Poppins', sans-serif !important; 
-    }
-    body {
-      background-color: #f4f4f4f4 !important;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A selection of web development projects by BadWolf Web Developments." />
+  <meta name="theme-color" content="#f3f1e9" />
+  <title>Selected Work | BadWolf Web Developments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#f3f1e9] text-[#182923] antialiased">
+  <header class="border-b border-[#d3d5c9]">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 sm:px-10" aria-label="Main navigation">
+      <a class="font-display text-lg font-bold tracking-wide" href="index.html">BADWOLF<span class="text-[#52734f]">.</span></a>
+      <a class="text-sm font-semibold text-[#46534a] transition hover:text-[#182923]" href="index.html"><span aria-hidden="true">←</span> Back home</a>
+    </nav>
+  </header>
 
-<div class="container">
-  <h2>Freelance Projects</h2><br><br>
-  <p>Here are just a few projects I have recently done.</p>
-  <p>Click on the images to visit the site.</p>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="https://thatgoodstore.wpcomstaging.com/" target="_blank">
-          <img src="/images/estore.JPG" alt="ecommerce store" style="width:100%">
-          <div class="caption">
-            <p>This is an ecommerce store done with WordPress.</p>
-          </div>
-        </a>
+  <main class="mx-auto max-w-7xl px-6 pb-20 pt-16 sm:px-10 sm:pt-24">
+    <section aria-labelledby="projects-heading">
+      <div class="mb-12 flex flex-col justify-between gap-6 border-b border-[#d3d5c9] pb-10 md:flex-row md:items-end">
+        <div>
+          <p class="mb-4 text-xs font-bold uppercase tracking-[0.22em] text-[#52734f]">Selected work</p>
+          <h1 id="projects-heading" class="font-display text-5xl font-semibold leading-tight sm:text-7xl">A few things<br />I’ve made.</h1>
+        </div>
+        <p class="max-w-md text-lg leading-8 text-[#46534a]">A small collection of client and personal projects, built with care and a mix of tools.</p>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="https://adventure-project.herokuapp.com/?fbclid=IwAR0Xbz4VRdwi2NaKcRptxltTgME15H0ClMHZf73m1qdWNxXi2V6IiQ5eg64" target="_blank">
-          <img src="/images/fstack.JPG" alt="fullstack project" style="width:100%">
-          <div class="caption">
-            <p>This is a full stack site done with Python, Flask and Bootstrap</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="thumbnail">
-        <a href="https://badwolf910.github.io/cambodian_blog/?fbclid=IwAR1gnqYrtOsgbfvzQmrUbi-8EYx3AL2FmFvrylLxmAGqNUj2aRFsZE5eERE" target="_blank">
-          <img src="/images/cblog.JPG" alt="blog" style="width:100%">
-          <div class="caption">
-            <p>This is a blog done with Bootstrap and has an added weather widget.</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
+      <div class="grid gap-x-7 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+        <article class="group">
+          <a class="block" href="https://badwolf910.github.io/Hartwell-Law/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Hartwell Law personal website">
+            <div class="aspect-[1.91] w-full overflow-hidden">
+              <img class="h-full w-full object-cover transition duration-300 group-hover:brightness-90" src="images/hartwell-portrait.jpg" alt="Portrait of Elena Hartwell" />
+            </div>
+            <div class="flex items-start justify-between gap-4 pt-5">
+              <div>
+                <h2 class="font-display text-xl font-semibold">Hartwell Law</h2>
+                <p class="mt-2 leading-6 text-[#5c655c]">A personal page for a local lawyer.</p>
+              </div>
+              <span class="mt-1 text-xl transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a class="block" href="https://badwolf910.github.io/per_my_last_email/" target="_blank" rel="noopener noreferrer" aria-label="Visit Per My Last Email, a personal blog">
+            <div class="aspect-[1.91] w-full overflow-hidden">
+              <img class="h-full w-full object-cover transition duration-300 group-hover:brightness-90" src="images/per-my-last-email-art.png" alt="Featured illustration of a laptop made of sand" />
+            </div>
+            <div class="flex items-start justify-between gap-4 pt-5">
+              <div>
+                <h2 class="font-display text-xl font-semibold">Per My Last Email</h2>
+                <p class="mt-2 leading-6 text-[#5c655c]">A cheeky corporate blog to vent and maybe giggle a little.</p>
+              </div>
+              <span class="mt-1 text-xl transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a class="block" href="https://badwolf910.github.io/pretty-pages/index.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Smith Family Recipes">
+            <div class="aspect-[1.91] w-full overflow-hidden">
+              <img class="h-full w-full object-cover transition duration-300 group-hover:brightness-90" src="images/smith-family-recipes.jpg" alt="Smith Family Recipes hero image with a handwritten recipe book and kitchen ingredients" />
+            </div>
+            <div class="flex items-start justify-between gap-4 pt-5">
+              <div>
+                <h2 class="font-display text-xl font-semibold">Smith Family Recipes</h2>
+                <p class="mt-2 leading-6 text-[#5c655c]">A family recipe book made to gather favorite meals and traditions.</p>
+              </div>
+              <span class="mt-1 text-xl transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="group">
+          <a class="block" href="https://badwolf910.github.io/cambodian_blog/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Cambodian blog">
+            <img class="aspect-[1.91] w-full object-cover transition duration-300 group-hover:brightness-90" src="images/cblog.JPG" alt="Preview of a travel blog with a weather widget" />
+            <div class="flex items-start justify-between gap-4 pt-5">
+              <div>
+                <h2 class="font-display text-xl font-semibold">Cambodian blog</h2>
+                <p class="mt-2 leading-6 text-[#5c655c]">A Bootstrap blog with an integrated weather widget.</p>
+              </div>
+              <span class="mt-1 text-xl transition-transform group-hover:translate-x-1" aria-hidden="true">↗</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="flex flex-col gap-2 bg-[#182923] px-6 py-7 text-sm text-white/75 sm:flex-row sm:items-center sm:justify-between sm:px-10">
+    <a class="font-display font-bold text-white" href="index.html">BadWolf Web Developments</a>
+    <p>© 2021 BadWolf Web Developments</p>
+  </footer>
 </body>
 </html>
