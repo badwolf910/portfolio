@@ -15,8 +15,8 @@
   background-image: linear-gradient(rgb(0 0 0 / 42%), rgb(0 0 0 / 42%)), url('images/mountain.jpg');
   background-position: center;
   background-size: cover;
-  filter: blur(1px);
-  transition: filter 1s ease;
+  filter: none;
+  transition: none;
   content: '';
 }
 
@@ -25,7 +25,7 @@
 }
 
 .hero:hover::before {
-  filter: blur(0);
+  filter: none;
 }
 
 :focus-visible {
