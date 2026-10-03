@@ -49,5 +49,23 @@
   <footer class="bg-[#333] px-6 py-7 text-center text-sm text-white">
     <p>BadWolf Web Developments © 2026</p>
   </footer>
+  <script>
+function createSparkle() {
+  const sparkle = document.createElement("div");
+  sparkle.classList.add("sparkle");
+  sparkle.style.top = Math.random() * window.innerHeight + "px";
+  sparkle.style.left = Math.random() * window.innerWidth + "px";
+  document.querySelector(".sparkle-container").appendChild(sparkle);
+
+  setTimeout(() => sparkle.remove(), 1200);
+}
+
+window.onload = () => {
+  for (let i = 0; i < 40; i++) {
+    setTimeout(createSparkle, i * 30);
+  }
+};
+</script>
+
 </body>
 </html>
