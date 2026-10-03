@@ -14,7 +14,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[rgba(0,0,0,0.9)] text-white antialiased">
-  <div class="sparkle-container"></div>
+  <div class="shimmer-overlay"></div>
   <header class="hero relative flex min-h-[50vh] items-center justify-center overflow-hidden px-6 pt-0 pb-12 text-center sm:min-h-screen sm:pt-0" aria-labelledby="site-title">
     <div class="hero-content relative z-10 flex max-w-2xl -translate-y-14 flex-col items-center justify-center sm:-translate-y-20">
       <img class="mb-0 h-36 w-36 object-contain sm:h-48 sm:w-48" src="images/f.png" alt="BadWolf Web Developments logo" />
@@ -49,23 +49,6 @@
   <footer class="bg-[#333] px-6 py-7 text-center text-sm text-white">
     <p>BadWolf Web Developments © 2026</p>
   </footer>
-  <script>
-function createSparkle() {
-  const sparkle = document.createElement("div");
-  sparkle.classList.add("sparkle");
-  sparkle.style.top = Math.random() * window.innerHeight + "px";
-  sparkle.style.left = Math.random() * window.innerWidth + "px";
-  document.querySelector(".sparkle-container").appendChild(sparkle);
-
-  setTimeout(() => sparkle.remove(), 1200);
-}
-
-window.onload = () => {
-  for (let i = 0; i < 40; i++) {
-    setTimeout(createSparkle, i * 30);
-  }
-};
-</script>
 
 </body>
 </html>
