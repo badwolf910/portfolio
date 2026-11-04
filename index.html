@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="BadWolf Web Developments by BadWolf910." />
+  <meta name="description" content="Full-stack development with a front-end specialty. Explore Tessiel and selected work by BadWolf Web Developments." />
   <meta name="theme-color" content="#1a1a1a" />
   <title>BadWolf Web Developments</title>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="BadWolf Web Developments" />
-  <meta property="og:description" content="Explore the web development portfolio of BadWolf910." />
+  <meta property="og:description" content="Full-stack development with a front-end specialty. Explore Tessiel and selected work by BadWolf Web Developments." />
   <meta property="og:url" content="https://badwolf910.github.io/portfolio/" />
   <meta property="og:image" content="https://badwolf910.github.io/portfolio/images/portfolio-social-preview.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
@@ -17,7 +17,7 @@
   <meta property="og:image:alt" content="BadWolf Web Developments logo over a mountain background" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="BadWolf Web Developments" />
-  <meta name="twitter:description" content="Explore the web development portfolio of BadWolf910." />
+  <meta name="twitter:description" content="Full-stack development with a front-end specialty. Explore Tessiel and selected work by BadWolf Web Developments." />
   <meta name="twitter:image" content="https://badwolf910.github.io/portfolio/images/portfolio-social-preview.jpg" />
   <link rel="preload" as="image" href="images/mountain.jpg" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,23 +27,51 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[rgba(0,0,0,0.9)] text-white antialiased">
-  <header class="hero relative flex min-h-[50vh] items-center justify-center overflow-hidden px-6 pt-0 pb-12 text-center sm:min-h-screen sm:pt-0" aria-labelledby="site-title">
-    <div class="hero-content relative z-10 flex max-w-2xl -translate-y-14 flex-col items-center justify-center sm:-translate-y-20">
+  <header class="hero relative flex min-h-[80vh] items-center justify-center overflow-hidden px-6 py-12 text-center sm:min-h-screen sm:py-16" aria-labelledby="site-title">
+    <div class="hero-content relative z-10 flex max-w-2xl flex-col items-center justify-center">
       <img class="mb-0 h-36 w-36 object-contain sm:h-48 sm:w-48" src="images/f.png" alt="BadWolf Web Developments logo" />
       <div class="flex flex-col items-center gap-1">
         <h1 id="site-title" class="hero-title text-3xl font-bold tracking-[0.22em] text-white sm:text-[2rem]">BADWOLF</h1>
         <p class="text-sm font-bold uppercase tracking-[0.18em] text-white/90 sm:text-base">Web Developments</p>
       </div>
+      <p class="mt-6 text-xl font-semibold sm:text-2xl">Full-stack developer. Front-end specialist.</p>
+      <p class="mt-3 max-w-lg leading-7 text-white/90">Thoughtful interfaces, connected systems, and web experiences built with care from front to back.</p>
+      <div class="mt-7 flex flex-wrap justify-center gap-3">
+        <a class="rounded bg-[#c5e878] px-6 py-3 font-bold text-[#182923] transition hover:bg-white" href="#contact">Contact me</a>
+        <a class="rounded border border-white/60 bg-black/30 px-6 py-3 font-semibold transition hover:bg-white/15" href="#tessiel">Explore Tessiel</a>
+      </div>
     </div>
   </header>
 
   <main>
+    <section id="tessiel" class="mx-auto max-w-6xl px-6 pt-12" aria-labelledby="tessiel-heading">
+      <article class="featured-project">
+        <div class="project-preview">
+          <img src="images/tessiel-hero.jpg" width="1152" height="768" loading="lazy" alt="Tessiel hero: an open journal with a glowing constellation paw print, a candle, and the tagline Reflection, not prediction." />
+        </div>
+        <div class="featured-project-content">
+          <p class="project-eyebrow">Featured project</p>
+          <h2 id="tessiel-heading" class="text-3xl font-bold sm:text-4xl">Tessiel</h2>
+          <p class="mt-4 leading-7">A birth-chart-inspired reflection app that pairs personalized insights with an AI companion. Free chart reflections, ongoing conversations, and a private journal create a thoughtful space for self-exploration.</p>
+          <p class="mt-4 text-sm leading-6 text-white/75">A full-stack project with a focus on an approachable, cohesive front-end experience.</p>
+          <ul class="project-stack" aria-label="Tessiel technology stack">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Supabase</li>
+            <li>Vite</li>
+            <li>Vercel</li>
+          </ul>
+          <a class="project-link" href="https://tessiel.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Explore Tessiel (opens in a new tab)">Explore Tessiel <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </article>
+    </section>
+
     <section class="mx-auto grid max-w-4xl grid-cols-1 gap-6 px-6 py-8 text-center sm:grid-cols-2 sm:py-12" aria-label="Find me online">
       <div class="rounded border border-white/10 bg-white/5 py-5">
         <a class="text-lg font-semibold hover:underline" href="https://github.com/badwolf910" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
       <div class="rounded border border-white/10 bg-white/5 py-5">
-        <a class="text-lg font-semibold hover:underline" href="fprojects.html">Freelance Projects</a>
+        <a class="text-lg font-semibold hover:underline" href="fprojects.html">Selected Work</a>
       </div>
     </section>
 
@@ -51,10 +79,48 @@
       <div class="mx-auto grid max-w-5xl gap-5 px-6 py-12 sm:grid-cols-[1fr_2fr] sm:py-16">
         <h2 id="about-heading" class="text-2xl font-semibold">About Me</h2>
         <div class="space-y-4 leading-7">
-          <p>I’m a developer who thrives where design meets logic, building interfaces that feel human, responsive, and a little bit magical. With experience across healthcare tech, STEM education, and full‑stack development, I love turning messy real‑world problems into clean, functional code. I’m a HarvardX CS50 certificate holder, and I enjoy exploring how design, logic, and storytelling intersect in modern web development.</p>
+          <p>I’m a skilled full-stack developer with a specialty in front-end development. I thrive where design meets logic, building interfaces that feel human, responsive, and a little bit magical, and connecting them to the systems that make them work. With experience across healthcare tech, STEM education, and full‑stack development, I love turning messy real‑world problems into clean, functional code. I’m a HarvardX CS50 certificate holder, and I enjoy exploring how design, logic, and storytelling intersect in modern web development.</p>
           <p>Outside of code, I’m usually writing Sci-fi, exploring, or curled up with my cat and a Chuck rerun</p>
         </div>
       </div>
+    </section>
+
+    <section class="mx-auto max-w-5xl px-6 py-12 sm:py-16" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" class="text-2xl font-semibold">Skills &amp; specialties</h2>
+      <p class="mt-3 max-w-2xl leading-7 text-white/80">Full-stack capability, with front-end craft at the heart of every project.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded border border-white/10 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold text-[#c5e878]">Front-end specialty</h3>
+          <ul class="mt-4 space-y-2 leading-7">
+            <li>HTML, CSS, JavaScript &amp; React</li>
+            <li>Responsive interface design</li>
+            <li>Accessibility &amp; thoughtful UX</li>
+          </ul>
+        </div>
+        <div class="rounded border border-white/10 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold text-[#c5e878]">Full-stack development</h3>
+          <ul class="mt-4 space-y-2 leading-7">
+            <li>Back-end application logic</li>
+            <li>API &amp; database integration</li>
+            <li>Connected, end-to-end features</li>
+          </ul>
+        </div>
+        <div class="rounded border border-white/10 bg-white/5 p-6">
+          <h3 class="text-lg font-semibold text-[#c5e878]">From idea to launch</h3>
+          <ul class="mt-4 space-y-2 leading-7">
+            <li>Git &amp; GitHub workflows</li>
+            <li>Debugging &amp; problem-solving</li>
+            <li>Deployment &amp; iteration</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="border-t border-white/10 bg-white/5 px-6 py-12 text-center sm:py-16" aria-labelledby="contact-heading" tabindex="-1">
+      <h2 id="contact-heading" class="text-2xl font-semibold">Let's build something together.</h2>
+      <p class="mt-4 leading-7 text-white/80">Have a project in mind? Send me an email.</p>
+      <p class="mt-4 break-words text-lg font-semibold text-[#c5e878]">danielle@badwolfweb.com</p>
+      <a class="mt-6 inline-block rounded bg-[#c5e878] px-6 py-3 font-bold text-[#182923] transition hover:bg-white" href="mailto:danielle@badwolfweb.com">Open email app</a>
+      <p class="mx-auto mt-4 max-w-md text-sm leading-6 text-white/75">If no email app opens, copy the address above into Gmail, Outlook, or your preferred email service.</p>
     </section>
   </main>
 

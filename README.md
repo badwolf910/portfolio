@@ -12,13 +12,17 @@ Features
 - Clear project organization
 - Accessible typography and spacing
 - Custom “Selected Work” page
+- Tessiel featured prominently on the home and Selected Work pages, with its live hero artwork and React, TypeScript, Supabase, Vite, and Vercel stack badges
+- Full-stack skills overview with a front-end specialty
+- Home-page “Contact me” button linking to a contact section with a visible, copyable email address and an optional email-app link
 - Lightweight HTML and CSS structure
-- No external frameworks
+- Tailwind CSS utilities via CDN
 
 Tech Stack
 
 - HTML  
 - CSS  
+- Tailwind CSS (CDN)
 
 Live Demo
 
@@ -26,10 +30,8 @@ https://badwolf910.github.io/portfolio/
 
 Pages Included
 
-- **Home** – Introduction, navigation, and overview  
-- **Selected Work** – A curated list of projects with descriptions and links  
-- **About** – Background, experience, and personal details  
-- **Contact** – Ways to reach me  
+- **Home** (`index.html`) – Introduction, featured Tessiel project, skills, about section, and contact section
+- **Selected Work** (`fprojects.html`) – Featured Tessiel project followed by a curated list of projects with descriptions and links
 
 Project Goals
 
@@ -42,4 +44,3 @@ Author
 
 Danielle Smith  
 https://github.com/badwolf910
-
