@@ -26,7 +26,20 @@ Tech Stack
 
 Live Demo
 
-https://badwolf910.github.io/portfolio/
+https://badwolfweb.com/
+
+Custom Domain Setup
+
+The root `CNAME` file configures `badwolfweb.com` for GitHub Pages when deployed.
+Before switching, verify ownership in GitHub Settings > Pages using GitHub's supplied TXT record.
+In Porkbun, disable the existing Link In Bio URL forwarding and replace only conflicting web records:
+
+- Apex A records (leave Host blank): `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- `www` CNAME: `badwolf910.github.io`
+
+Keep Porkbun's nameservers and preserve all email-related MX, TXT, and CNAME records.
+Remove or replace conflicting apex AAAA/ALIAS records if present; do not leave them pointing at the old host.
+After deploying the domain configuration and DNS propagation, confirm the DNS check and certificate in repository Settings > Pages, and enable Enforce HTTPS when available.
 
 Pages Included
 
